@@ -23,7 +23,9 @@ st.markdown("This app helps you to generate Bidding and Proposal for your specif
 st.sidebar.title("Bidding and Proposal Generation")
 API_KEY = os.getenv('OPENAI_API_KEY')
 
-
+st.sidebar.markdown('---')
+utils.template_end()
+utils.social_media()
 
 col1, col2, col3 = st.columns(3)
 
@@ -38,7 +40,7 @@ with col1:
 with col2:
     project_location = st.text_input(label="Project Location")
     end_data = st.date_input(label="End Data")
-    estimated_budget = st.text_input(label="Estimated Budget")
+    estimated_budget = st.text_input(label="Estimated Budget", value="$")
     company_address = st.text_input(label="Company Address")
 
 with col3:
@@ -75,6 +77,3 @@ if (project_name and project_location and design_preference and amenities and
             st.write(proposal)
         
 
-st.sidebar.markdown('---')
-utils.template_end()
-utils.social_media()
