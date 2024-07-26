@@ -3,7 +3,7 @@ from lyzr_automata import Agent, Task
 from lyzr_automata.tasks.task_literals import InputType, OutputType
 from lyzr_automata.pipelines.linear_sync_pipeline  import  LinearSyncPipeline
 from lyzr_automata import Logger
-from prompts.prompts import refereceData, taskPrompt
+from prompts.prompts import refereceData
 from dotenv import load_dotenv; load_dotenv()
 
 

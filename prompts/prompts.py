@@ -97,7 +97,7 @@ def refereceData(ProjectTitle,
                 - **Payment Schedule:** Payments will be made in installments based on the completion of each project phase.
                 - **Change Orders:** Any changes to the project scope will be documented and may incur additional costs.
                 - **Warranty:** A one-year warranty will be provided for all construction work.
-                - **Insurance:** XYZ Construction Inc. is fully insured and will provide proof of insurance upon request.
+                - **Insurance:** {CompanyName} is fully insured and will provide proof of insurance upon request.
 
                 ### 7. Contact Information
 
@@ -118,12 +118,3 @@ def refereceData(ProjectTitle,
                         """
     
     return data
-
-
-def taskPrompt():
-    prompt = """
-                Create a full Bidding and proposal report for the USER.
-
-            """
-    
-    return prompt
